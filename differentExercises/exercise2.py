@@ -14,7 +14,9 @@ def main(n: int, k: int, N: int) -> float:
     result = countDifferentNum / N
     print("Die Wahrscheinlichkeit das in N sublisten mit k Elementen aus {{1,...n}} k voneinander verschiedene Zahlen"
           f"gezogen werden ist {result}")
+    return result
+
 
 if __name__ == "__main__":
-    main(n=100, k=10, N=10000)
-    # für größeres N nähert sich der Wert 0.629 an
+    print(main(n=100, k=10, N=10000))
+    # für größeres N nähert sich der Wert 0.628 an
